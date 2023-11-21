@@ -6,3 +6,8 @@
 
 # How a Spark Application Runs on a Cluster
 ![name-of-you-image](https://miro.medium.com/v2/resize:fit:1100/format:webp/1*LK_ZDRzQKHrFp8RqOfijeA.png)
+
+#### 1. A Spark application runs as independent processes, coordinated by the SparkSession object in the driver program.
+#### 2. The resource or cluster manager assigns tasks to workers, one task per partition.
+#### 3. A task applies its unit of work to the dataset in its partition and outputs a new partition dataset. Because iterative algorithms apply operations repeatedly to data, they benefit from caching datasets across iterations.
+#### 4. Results are sent back to the driver application or can be saved to disk.
