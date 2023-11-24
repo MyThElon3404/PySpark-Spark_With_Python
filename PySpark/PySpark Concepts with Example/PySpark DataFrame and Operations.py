@@ -1,5 +1,4 @@
 # Databricks notebook source
-# MAGIC %md
 # MAGIC #### =================================================================
 # MAGIC # PySpark DataFrame
 # MAGIC #### =================================================================
@@ -244,31 +243,31 @@ deptDF.show(truncate=False)
 
 # 1. Inner Join: Returns only the rows with matching keys in both DataFrames.
 #### =============================================================================
-# empDF.join(deptDF, empDF.emp_dept_id == deptDF.dept_id, "inner").show(truncate=False)
+empDF.join(deptDF, empDF.emp_dept_id == deptDF.dept_id, "inner").show(truncate=False)
 
 # 2. Full Outer Join: Returns all rows from both DataFrames, including matching and non-matching rows.
 #### =============================================================================
-# empDF.join(deptDF,empDF.emp_dept_id ==  deptDF.dept_id,"outer").show(truncate=False)
-# empDF.join(deptDF,empDF.emp_dept_id ==  deptDF.dept_id,"full").show(truncate=False)
-# empDF.join(deptDF,empDF.emp_dept_id ==  deptDF.dept_id,"fullouter").show(truncate=False)
+empDF.join(deptDF,empDF.emp_dept_id ==  deptDF.dept_id,"outer").show(truncate=False)
+empDF.join(deptDF,empDF.emp_dept_id ==  deptDF.dept_id,"full").show(truncate=False)
+empDF.join(deptDF,empDF.emp_dept_id ==  deptDF.dept_id,"fullouter").show(truncate=False)
 
 # 3. Left Join: Returns all rows from the left DataFrame and matching rows from the right DataFrame.
 #### ============================================================================= 
-# empDF.join(deptDF, empDF.emp_dept_id == deptDF.dept_id, "left").show()
-# empDF.join(deptDF, empDF.emp_dept_id == deptDF.dept_id, "leftouter").show()
+empDF.join(deptDF, empDF.emp_dept_id == deptDF.dept_id, "left").show()
+empDF.join(deptDF, empDF.emp_dept_id == deptDF.dept_id, "leftouter").show()
 
 # 4. Right Join: Returns all rows from the right DataFrame and matching rows from the left DataFrame.
 #### ============================================================================= 
-# empDF.join(deptDF,empDF.emp_dept_id ==  deptDF.dept_id,"right").show(truncate=False)
-# empDF.join(deptDF,empDF.emp_dept_id ==  deptDF.dept_id,"rightouter").show(truncate=False)
+empDF.join(deptDF,empDF.emp_dept_id ==  deptDF.dept_id,"right").show(truncate=False)
+empDF.join(deptDF,empDF.emp_dept_id ==  deptDF.dept_id,"rightouter").show(truncate=False)
 
 # 4. Left Semi Join: Returns all rows from the left DataFrame where there is a match in the right DataFrame.
 #### ============================================================================= 
-# empDF.join(deptDF,empDF.emp_dept_id ==  deptDF.dept_id,"leftsemi").show(truncate=False)
+empDF.join(deptDF,empDF.emp_dept_id ==  deptDF.dept_id,"leftsemi").show(truncate=False)
 
 # 5. Left Anti Join: Returns all rows from the left DataFrame where there is no match in the right DataFrame.
 #### ============================================================================= 
-# empDF.join(deptDF,empDF.emp_dept_id ==  deptDF.dept_id,"leftanti").show(truncate=False)
+empDF.join(deptDF,empDF.emp_dept_id ==  deptDF.dept_id,"leftanti").show(truncate=False)
 
 # 6. PySpark Self Join: Joins are not complete without a self join, Though there is no self-join type available, we can use any of the above-explained join types to join DataFrame to itself. below example use inner self join.
 #### ============================================================================= 
