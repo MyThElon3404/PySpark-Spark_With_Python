@@ -52,7 +52,7 @@ df2.show(truncate=False)
 df2.printSchema()
 print(df2.columns)
 
-# now we are creating dataframe by Data sources (CSV, Text, JSON, XML e.t.c.)
+# now we are creating dataframe by Data sources (CSV, Text, JSON, XML etc)
 #### =================================================================
 df3 = data_frame.read.csv("/FileStore/tables/sales_data.csv", header=True, inferSchema=True)
 df3.printSchema()
