@@ -2,7 +2,7 @@
 # MAGIC #### =================================================================
 # MAGIC # PySpark DataFrame
 # MAGIC #### =================================================================
-# MAGIC #### DataFrame is a distributed collection of data organized into named columns. It is conceptually equivalent to a table in a relational database or a data frame in R/Python, but with richer optimizations under the hood.
+# MAGIC #### DataFrame is a distributed collection of data organized into named columns. It is conceptually equivalent to a table in a relational database or a data frame in Python, but with richer optimizations under the hood.
 
 # COMMAND ----------
 
