@@ -82,8 +82,8 @@ df4.show(truncate=False)
 
 # here we can check our dataset in databricks
 
-%fs
-ls /FileStore/tables/csv_write/
+#%fs
+#ls /FileStore/tables/csv_write/
 
 
 # COMMAND ----------
