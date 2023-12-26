@@ -20,3 +20,6 @@
 #### 3. Streaming - Enables processing of live streams of data. Spark Streaming provides an API for manipulating data streams that are similar to Spark Core’s RDD API.
 #### 4. MLlib - Provides multiple types of machine learning algorithms, like classification, regression, clustering, etc.
 #### 5. GraphX - Library for manipulating graphs and performing graph-parallel computations. This library is where you can find PageRank and triangle counting algorithms.
+
+# Spark features
+![name-of-you-image](https://miro.medium.com/v2/resize:fit:828/format:webp/1*R1iWlKNh9cMxayTJgCoOeg.png)
