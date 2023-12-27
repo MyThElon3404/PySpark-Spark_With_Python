@@ -3,3 +3,11 @@
 
 ## Transformations - 
 #### Transformations are operations on the RDDs that create a new RDD by making changes to the original RDD. Briefly, they are functions that take an existing RDD as input to give new RDDs as output, without making changes to the original RDD (Note that RDDs are immutable!) This process of transforming an RDD to a new one is done through operations such as filter, map, reduceByKey, sortBy etc.
+
+###  The transformations on RDD can be categorized into two: Narrow and Wide.
+
+#### 1. Narrow transformations, the result of the transformation is such that in the output RDD each of the partitions have records that are from the same partition in the parent RDD. Operations like Map, FlatMap, Filter, Sample come under narrow transformations.
+
+#### 2. Wide transformations, the data in each of the partitions of the resulting RDD comes from multiple different partitions in the parent RDD. Transformation functions like groupByKey(), reduceByKey() fall under the category of wide transformation.
+
+!(https://miro.medium.com/v2/resize:fit:1400/format:webp/1*6dYzs4GK3Q9nSPkMp-3w2w.png)
