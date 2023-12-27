@@ -8,6 +8,6 @@
 
 ![SparkSession](https://miro.medium.com/v2/resize:fit:1400/format:webp/0*ivIifEQVPN9s_8wi.png)
 
-To know about Use cases and scenarios - https://medium.com/@akhilasaineni7/exploring-sparkcontext-and-sparksession-8369e60f658e
+### To know about Use cases and scenarios - https://medium.com/@akhilasaineni7/exploring-sparkcontext-and-sparksession-8369e60f658e
 
-Also for Hands-on approach - https://medium.com/@akhilasaineni7/exploring-sparkcontext-and-sparksession-8369e60f658e
+### Also for a Hands-on approach - https://medium.com/@akhilasaineni7/exploring-sparkcontext-and-sparksession-8369e60f658e
