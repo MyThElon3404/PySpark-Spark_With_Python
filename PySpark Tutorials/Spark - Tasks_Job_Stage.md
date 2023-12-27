@@ -10,3 +10,5 @@
 ### A job consists of multiple stages. Usually, a job is created once an action is executed. Any transformation creates RDDs using multiple other RDDs. But when working with actual datasets, action must be performed on such RDDs. Actions are RDD operations that give non-RDD values such as take(), collect(), count(), read(), and write().
 
 ![Tasks-jobs-stage](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*JptbIrrLqKriVfPHXKX36Q.png)
+
+To know More - https://medium.com/@thisun.17/spark-jobs-stages-and-tasks-930b7487bf40
