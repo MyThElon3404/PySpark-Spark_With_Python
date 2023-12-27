@@ -1,4 +1,4 @@
-https://miro.medium.com/v2/resize:fit:1100/format:webp/0*kGd77SnPU7i8gjtl.png
+![name-of-you-image](https://miro.medium.com/v2/resize:fit:1100/format:webp/0*kGd77SnPU7i8gjtl.png)
 
 # Transformations and Actions - 
 ### Common Spark jobs are created using operations in DataFrame API. These operations are either transformations or actions.
