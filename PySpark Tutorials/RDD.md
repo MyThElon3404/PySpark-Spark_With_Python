@@ -14,3 +14,5 @@
 
 ## Actions - 
 #### Actions are the operations on the RDD to carry out computations and return the final result back to the driver. It triggers the execution to carry out intermediate transformations after loading the data into the RDD and finally passing the result back. These actions are operations that result in non-RDD values. As we already saw, the transformations are executed only when an action requires a result to be returned. Collect, reduce, countByKey, count are some of the actions.
+
+#### For hands-on approach - https://medium.com/analytics-vidhya/understanding-spark-rdds-part-3-3b1b9331652a
