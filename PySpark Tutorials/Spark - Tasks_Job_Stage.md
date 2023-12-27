@@ -1,3 +1,5 @@
+![image](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*AnI1UoA6_QDS82I__KBFeA.png)
+
 # Tasks - 
 ### A spark task is an operation over a single partition of data. A partition is a logical chunk of data. Data is split into Partitions so that each Executor core can operate on a single partition and run in parallel to each core (parallel data processing power comes from here).
 
