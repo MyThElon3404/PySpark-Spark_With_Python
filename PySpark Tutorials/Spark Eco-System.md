@@ -35,6 +35,7 @@
 #### R also provides software facilities for data manipulation, calculation, and graphical display. Hence, the main idea behind SparkR was to explore different techniques to integrate the usability of R with the scalability of Spark. It is an R package that gives a lightweight frontend to use Apache Spark from R.
 
 ![name-of-you-image](https://miro.medium.com/v2/resize:fit:1100/format:webp/1*UsRTz2Xlz6hnhj5cWnCtcQ.png)
+![name-of-you-image](https://miro.medium.com/v2/resize:fit:1400/format:webp/0*kGd77SnPU7i8gjtl.png)
 
 #### ---------------------------------------------------------------------------------------------------------------
 
