@@ -6,8 +6,11 @@
 
 ###  The transformations on RDD can be categorized into two: Narrow and Wide.
 
-#### 1. Narrow transformations, the result of the transformation is such that in the output RDD each of the partitions have records that are from the same partition in the parent RDD. Operations like Map, FlatMap, Filter, Sample come under narrow transformations.
+#### 1. Narrow transformations - the result of the transformation is such that in the output RDD each of the partitions has records that are from the same partition in the parent RDD. Operations like Map, FlatMap, Filter, and Sample come under narrow transformations.
 
-#### 2. Wide transformations, the data in each of the partitions of the resulting RDD comes from multiple different partitions in the parent RDD. Transformation functions like groupByKey(), reduceByKey() fall under the category of wide transformation.
+#### 2. Wide transformations - the data in each of the partitions of the resulting RDD comes from multiple different partitions in the parent RDD. Transformation functions like groupByKey(), and reduceByKey() fall under the category of wide transformation.
 
 ![name-of-you-image](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*6dYzs4GK3Q9nSPkMp-3w2w.png)
+
+## Actions - 
+#### Actions are the operations on the RDD to carry out computations and return the final result back to the driver. It triggers the execution to carry out intermediate transformations after loading the data into the RDD and finally passing the result back. These actions are operations that result in non-RDD values. As we already saw, the transformations are executed only when an action requires a result to be returned. Collect, reduce, countByKey, count are some of the actions.
