@@ -5,3 +5,6 @@
 
 # Dive Deep into DAGs
 ### Let’s explore more about DAGs by writing some code and understanding diff terms like  the jobs, stages, and tasks
+
+#### for this refer - https://medium.com/plumbersofdatascience/understanding-spark-dags-b82020503444
+
