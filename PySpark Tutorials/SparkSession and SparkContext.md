@@ -5,4 +5,9 @@
 
 # SparkSession - 
 ### SparkSession was introduced in Spark 2.0, and is a unified interface that combines Spark’s various functionalities into a single entry point. SparkSession integrates SparkContext and provides a higher-level API for working with structured data through Spark SQL, streaming data with Spark Streaming, and performing machine learning tasks with MLlib. It simplifies application development by automatically creating a SparkContext and providing a seamless experience across different Spark modules. With SparkSession, developers can leverage Spark’s capabilities without explicitly managing multiple contexts.
+
 ![SparkSession](https://miro.medium.com/v2/resize:fit:1400/format:webp/0*ivIifEQVPN9s_8wi.png)
+
+To know about Use cases and scenarios - https://medium.com/@akhilasaineni7/exploring-sparkcontext-and-sparksession-8369e60f658e
+
+Also for Hands-on approach - https://medium.com/@akhilasaineni7/exploring-sparkcontext-and-sparksession-8369e60f658e
