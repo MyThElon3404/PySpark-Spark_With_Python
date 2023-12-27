@@ -10,4 +10,4 @@
 
 #### 2. Wide transformations, the data in each of the partitions of the resulting RDD comes from multiple different partitions in the parent RDD. Transformation functions like groupByKey(), reduceByKey() fall under the category of wide transformation.
 
-!(https://miro.medium.com/v2/resize:fit:1400/format:webp/1*6dYzs4GK3Q9nSPkMp-3w2w.png)
+![name-of-you-image](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*6dYzs4GK3Q9nSPkMp-3w2w.png)
