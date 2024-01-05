@@ -16,3 +16,8 @@ from pyspark.sql.types import *
 pizza_ss= SparkSession.builder.appName("Restaurant_Dannys_Dinner").getOrCreate()
 print(pizza_ss)
 ````
+**Answer:**
+
+![1*Ma9L4y6O_zhln6Wy7CdWMQ](https://user-images.githubusercontent.com/81607668/129473598-d6d55ab2-59c7-4040-97db-d1b0c1c5b294.png)
+
+- Total of 14 pizzas were ordered.
