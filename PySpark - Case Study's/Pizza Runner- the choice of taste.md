@@ -16,8 +16,37 @@ from pyspark.sql.types import *
 pizza_ss= SparkSession.builder.appName("Restaurant_Dannys_Dinner").getOrCreate()
 print(pizza_ss)
 ````
-**Answer:**
+- spark session created
 
-![1*Ma9L4y6O_zhln6Wy7CdWMQ](https://user-images.githubusercontent.com/81607668/129473598-d6d55ab2-59c7-4040-97db-d1b0c1c5b294.png)
+````sql
+# we are creating dataframes
 
-- Total of 14 pizzas were ordered.
+from pyspark.sql.functions import col, to_date
+
+runner_data = [
+    (1, '2021-01-01'),
+	(2, '2021-01-03'),
+	(3, '2021-01-08'),
+	(4, '2021-01-15')]
+
+runner_col = ["runner_id", "registration_date"]
+runners_df = pizza_ss.createDataFrame(data=runner_data, schema=runner_col)
+runners_df = runners_df.withColumn("registration_date", to_date(col("registration_date"), "yyyy-MM-dd"))
+runners_df.show()
+runners_df.printSchema()
+````
+# - Answer :
+```
++---------+-----------------+
+|runner_id|registration_date|
++---------+-----------------+
+|        1|       2021-01-01|
+|        2|       2021-01-03|
+|        3|       2021-01-08|
+|        4|       2021-01-15|
++---------+-----------------+
+
+root
+ |-- runner_id: long (nullable = true)
+ |-- registration_date: date (nullable = true)
+```
