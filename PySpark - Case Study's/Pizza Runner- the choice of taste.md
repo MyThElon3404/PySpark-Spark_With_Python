@@ -3,6 +3,8 @@
 #### Danny was scrolling through his Instagram feed when something really caught his eye - “80s Retro Styling and Pizza Is The Future!”
 #### Danny was sold on the idea, but he knew that pizza alone was not going to help him get seed funding to expand his new Pizza Empire - so he had one more genius idea to combine with it - he was going to Uberize it - and so [ Pizza Runner - the choice of taste ] was launched!
 
+# Below we are creating a spark session and dataframe so we can perform actions accordingly
+
 ```
 # creating a spark session to get started with our spark jobs
 
