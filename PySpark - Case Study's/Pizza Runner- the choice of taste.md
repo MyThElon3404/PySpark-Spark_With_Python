@@ -5,7 +5,7 @@
 
 # Below we are creating a spark session and dataframe so we can perform actions accordingly
 
-```
+```` sql
 # creating a spark session to get started with our spark jobs
 
 import pyspark
@@ -15,4 +15,4 @@ from pyspark.sql.types import *
 
 pizza_ss= SparkSession.builder.appName("Restaurant_Dannys_Dinner").getOrCreate()
 print(pizza_ss)
-```
+````
