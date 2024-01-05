@@ -197,7 +197,6 @@ pizza_recipes_df.printSchema()
 |1       |1, 2, 3, 4, 5, 6, 8, 10|
 |2       |4, 6, 7, 9, 11, 12     |
 +--------+-----------------------+
-
 root
  |-- pizza_id: integer (nullable = true)
  |-- toppings: string (nullable = true)
@@ -358,4 +357,3 @@ pizza_ss.sql("""
                     from runner_orders_tb;
 """).show()
 ````
-# -------------------------------------------------
