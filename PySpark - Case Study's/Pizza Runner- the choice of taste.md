@@ -16,8 +16,9 @@ from pyspark.sql.types import *
 pizza_ss= SparkSession.builder.appName("Restaurant_Dannys_Dinner").getOrCreate()
 print(pizza_ss)
 ````
+# - Answer :
 - spark session created
-
+# ------------------------------------------------------------------------------
 ````sql
 # we are creating dataframes
 
@@ -50,3 +51,4 @@ root
  |-- runner_id: long (nullable = true)
  |-- registration_date: date (nullable = true)
 ```
+# ------------------------------------------------------------------------------
