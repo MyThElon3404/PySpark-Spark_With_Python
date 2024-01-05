@@ -253,7 +253,7 @@ root
 
 ### - to enable sparkSQL functionality in dataframe we need to create a temp view on top of dataframe
 
-````
+````sql
 runners_df.createOrReplaceTempView("runners_tb")
 customer_orders_df.createOrReplaceTempView("customer_orders_tb")
 runner_orders_df.createOrReplaceTempView("runner_orders_tb")
@@ -264,3 +264,98 @@ pizza_toppings_df.createOrReplaceTempView("pizza_toppings_tb")
 # -------------------------------------------------
 
 ## - Let's clean our datasets so we can perform oprations on that
+````sql
+# dataframe = customer_orders_df
+# In the exclusions column, there are missing/ blank spaces ' ' and null values.
+# In the extras column, there are missing/ blank spaces ' ' and null values.
+
+pizza_ss.sql("""
+                    select order_id, customer_id, pizza_id,
+                        case 
+                            when exclusions is null or exclusions like 'null' then ' '
+                            else exclusions
+                        end as exclusions,
+                        case 
+                            when extras is null or extras like 'null' then ' '
+                            else extras
+                        end as extras,
+                        order_time
+                    from customer_orders_tb;
+""").show()
+````
+#### - creating new table with changes like remove spaces and nulls
+````sql
+pizza_ss.sql("""
+                    create or replace table customer_orders_tb_new as
+                    select order_id, customer_id, pizza_id,
+                        case 
+                            when exclusions is null or exclusions like 'null' then ' '
+                            else exclusions
+                        end as exclusions,
+                        case 
+                            when extras is null or extras like 'null' then ' '
+                            else extras
+                        end as extras,
+                        order_time
+                    from customer_orders_tb;
+""").show()
+````
+### - Answer :
+```
++--------+-----------+--------+----------+------+-------------------+
+|order_id|customer_id|pizza_id|exclusions|extras|         order_time|
++--------+-----------+--------+----------+------+-------------------+
+|       1|        101|       1|          |      |2020-01-01 18:05:02|
+|       2|        101|       1|          |      |2020-01-01 19:00:52|
+|       3|        102|       1|          |      |2020-01-02 23:51:23|
+|       3|        102|       2|          |      |2020-01-02 23:51:23|
+|       4|        103|       1|         4|      |2020-01-04 13:23:46|
+|       4|        103|       1|         4|      |2020-01-04 13:23:46|
+|       4|        103|       2|         4|      |2020-01-04 13:23:46|
+|       5|        104|       1|          |     1|2020-01-08 21:00:29|
+|       6|        101|       2|          |      |2020-01-08 21:03:13|
+|       7|        105|       2|          |     1|2020-01-08 21:20:29|
+|       8|        102|       1|          |      |2020-01-09 23:54:33|
+|       9|        103|       1|         4|  1, 5|2020-01-10 11:22:59|
+|      10|        104|       1|          |      |2020-01-11 18:34:49|
+|      10|        104|       1|      2, 6|  1, 4|2020-01-11 18:34:49|
++--------+-----------+--------+----------+------+-------------------+
+```
+# -------------------------------------------------
+#### - creating new table with changes like remove spaces and nulls
+````sql
+# dataframe = runner_orders_df
+# In pickup_time column, remove nulls and replace with blank space ' '.
+# In distance column, remove "km" and nulls and replace with blank space ' '.
+# In duration column, remove "minutes", "minute" and nulls and replace with blank space ' '.
+# In cancellation column, remove NULL and null and and replace with blank space ' '.
+
+# also we created another table so we can store change in runner_orders_df/runner_orders_tb
+
+pizza_ss.sql("""
+                    create or replace table runner_orders_tb_new as
+                    select order_id, runner_id,
+                        case 
+                            when pickup_time is null or pickup_time like 'null' then ' '
+                            else pickup_time
+                        end as pickup_time,
+                        case 
+                            when distance is null or distance like 'null' then ' '
+                            when distance like '%km' then trim('km' from distance)
+                            else distance
+                        end as distance,
+                        case 
+                            when duration is null or duration like 'null' then ' '
+                            when duration like '%mins' then trim('mins' from duration)
+                            when duration like '%minute' then trim('minute' from duration)
+                            when duration like '%minutes' then trim('minutes' from duration)
+                            else duration
+                        end as duration,
+                        case 
+                            when cancellation is null or cancellation like 'null' then ' '
+                            else cancellation
+                        end as cancellation
+                    from runner_orders_tb;
+""").show()
+````
+# -------------------------------------------------
