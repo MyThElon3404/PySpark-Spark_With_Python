@@ -191,14 +191,76 @@ pizza_recipes_df.printSchema()
 ````
 ### - Answer :
 ```
-+--------+----------+
-|pizza_id|pizza_name|
-+--------+----------+
-|       1|Meatlovers|
-|       2|Vegetarian|
-+--------+----------+
++--------+-----------------------+
+|pizza_id|toppings               |
++--------+-----------------------+
+|1       |1, 2, 3, 4, 5, 6, 8, 10|
+|2       |4, 6, 7, 9, 11, 12     |
++--------+-----------------------+
+
 root
  |-- pizza_id: integer (nullable = true)
- |-- pizza_name: string (nullable = true)
+ |-- toppings: string (nullable = true)
 ```
 # -------------------------------------------------
+````sql
+# we are creating dataframes
+pizza_toppings_data = [
+    (1, 'Bacon'),
+	(2, 'BBQ Sauce'),
+	(3, 'Beef'),
+	(4, 'Cheese'),
+	(5, 'Chicken'),
+	(6, 'Mushrooms'),
+	(7, 'Onions'),
+	(8, 'Pepperoni'),
+	(9, 'Peppers'),
+	(10, 'Salami'),
+	(11, 'Tomatoes'),
+	(12, 'Tomato Sauce')
+]
+pizza_toppings_col = StructType([
+    StructField("topping_id", IntegerType(), True), 
+    StructField("topping_name", StringType(), True)
+])
+pizza_toppings_df = pizza_ss.createDataFrame(pizza_toppings_data, pizza_toppings_col)
+pizza_toppings_df.show()
+pizza_toppings_df.printSchema()
+````
+### - Answer :
+```
++----------+------------+
+|topping_id|topping_name|
++----------+------------+
+|         1|       Bacon|
+|         2|   BBQ Sauce|
+|         3|        Beef|
+|         4|      Cheese|
+|         5|     Chicken|
+|         6|   Mushrooms|
+|         7|      Onions|
+|         8|   Pepperoni|
+|         9|     Peppers|
+|        10|      Salami|
+|        11|    Tomatoes|
+|        12|Tomato Sauce|
++----------+------------+
+root
+ |-- topping_id: integer (nullable = true)
+ |-- topping_name: string (nullable = true)
+```
+# -------------------------------------------------
+
+### - to enable sparkSQL functionality in dataframe we need to create a temp view on top of dataframe
+
+````
+runners_df.createOrReplaceTempView("runners_tb")
+customer_orders_df.createOrReplaceTempView("customer_orders_tb")
+runner_orders_df.createOrReplaceTempView("runner_orders_tb")
+pizza_names_df.createOrReplaceTempView("pizza_names_tb")
+pizza_recipes_df.createOrReplaceTempView("pizza_recipes_df")
+pizza_toppings_df.createOrReplaceTempView("pizza_toppings_tb")
+````
+# -------------------------------------------------
+
+## - Let's clean our datasets so we can perform oprations on that
