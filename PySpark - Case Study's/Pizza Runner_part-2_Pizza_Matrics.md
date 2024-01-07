@@ -6,7 +6,7 @@
 ```sql
 pizza_ss.sql("select count(*) as pizza_ordered_count from customer_orders_tb_new;").show()
 ```
-- output :
+### output :
 +-------------------+
 |pizza_ordered_count|
 +-------------------+
