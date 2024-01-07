@@ -3,8 +3,6 @@
 ## ------------------------------------------------------------------------------
 
 ### Q1. How many pizzas were ordered?
-
-## ------------------------------------------------------------------------------
 ```sql
 pizza_ss.sql("select count(*) as pizza_ordered_count from customer_orders_tb_new;").show()
 ```
@@ -14,3 +12,4 @@ pizza_ss.sql("select count(*) as pizza_ordered_count from customer_orders_tb_new
 +-------------------+
 |                 14|
 +-------------------+
+## ------------------------------------------------------------------------------
