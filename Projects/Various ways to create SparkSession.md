@@ -12,7 +12,7 @@ spark = SparkSession.builder \
 .getOrCreate()
 ```
 -In this approach, you can set various configuration options using the config method, such as the application name, master URL, and other Spark properties.
-## -----------------------------------------------------------------------------------------
+## --------------------------------------------------------------------------------
 ### Method 2 - Using SparkConf and SparkSession.builder.config Method
 ```sql
 -- You can also use a combination of SparkConf and SparkSession.builder.config to set configuration options.
