@@ -4,8 +4,7 @@
 
 ## QUESTIONS & ANSWERS :
 
-- dataset
-<details>
+- Case Study Dataset - <details>
     <summary>Click Here</summary>
     https://github.com/MyThElon3404/PySpark-Spark_With_Python/blob/main/PySpark%20-%20Case%20Study's/Datasets/pyspark_retail_sales.csv
 </details>
