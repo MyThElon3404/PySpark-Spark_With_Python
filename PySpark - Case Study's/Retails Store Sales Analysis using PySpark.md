@@ -4,7 +4,7 @@
 
 ## QUESTIONS & ANSWERS :
 
-sql ```
+```sql
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import (count, when, isnull, col, max, date_sub, to_date,lit,sum, round,
                                    desc, month, year, avg, rank, lag, dayofweek, mean, collect_set, explode)
@@ -167,6 +167,5 @@ co_occurrence = product_pairs.alias("a").join(product_pairs.alias("b"), "Transac
                 .filter(col("a.ProductID") != col("b.ProductID")) \
                 .groupBy("a.ProductID", "b.ProductID").count().orderBy(desc("count"))
 co_occurrence.show()
-
 
 ```
