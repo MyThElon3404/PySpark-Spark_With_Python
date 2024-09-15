@@ -174,3 +174,4 @@ co_occurrence = product_pairs.alias("a").join(product_pairs.alias("b"), "Transac
 co_occurrence.show()
 
 ```
+
