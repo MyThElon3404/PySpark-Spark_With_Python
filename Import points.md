@@ -15,3 +15,11 @@ https://medium.com/@rganesh0203/most-important-spark-sql-concepts-as-a-data-engi
 - PySpark Interview Questions -> https://archive.ph/pGFiy
 
 - PySpark — Run Multiple Jobs in Parallel -> https://archive.ph/3kQ8b
+
+- PySpark Scaning and Partitioning -> https://archive.ph/U8pEm
+
+- Pyspark Interview Question: Inside a Walmart Data Engineering Interview -> https://archive.ph/hA3oG#selection-321.0-321.72
+
+- Apache Spark Optimizations: Enhancing Speed, Reducing Memory Usage, and Improving Scalability -> https://archive.ph/yrX3Y#selection-315.0-315.93
+
+- 
