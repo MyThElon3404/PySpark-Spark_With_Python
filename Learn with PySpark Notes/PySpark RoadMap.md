@@ -1,5 +1,6 @@
 ## Step 1 : Overview of Big Data
 ##### !Link - (https://medium.com/@oakstreetechnologies/big-data-analytics-everything-you-need-to-know-about-it-c8d8925881b6)
+##### !Link - (https://pub.aimind.so/pyspark-everything-you-need-to-know-24f87d12bfe1)
 
 ## Step 2 : Introduction to Apache Spark
 ##### !Link - (https://medium.com/nerd-for-tech/exploring-big-data-with-apache-spark-introduction-and-key-components-a6872c581ce6)
