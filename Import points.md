@@ -24,4 +24,4 @@ https://medium.com/@rganesh0203/most-important-spark-sql-concepts-as-a-data-engi
 
 - Complete Apache PySpark Learning Resources with Links — Data Engineering -> https://brilliantprogrammer.medium.com/complete-apache-pyspark-learning-resources-with-links-data-engineering-f1476f6860e6
 
-- 
+- 1.5 Years of Spark Knowledge in 8 Tips -> https://towardsdatascience.com/1-5-years-of-spark-knowledge-in-8-tips-f003c4743083
