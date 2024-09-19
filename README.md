@@ -1,10 +1,10 @@
-![name-of-you-image](https://tse3.mm.bing.net/th/id/OIP.HQOz-XE1ErWcjeXWCcYijQHaEL?rs=1&pid=ImgDetMain)
+![name-of-you-image](https://cdn-images-1.medium.com/v2/resize:fit:851/1*nPcdyVwgcuEZiEZiRqApug.jpeg)
 # Introduction about Apache Spark and PySpark - 
 ### <!> Spark - The Apache Spark is a fast and powerful framework that provides an API to perform massive distributed processing over resilient sets of data. It also ensures data processing with lightning speed and supports various languages like Scala, Python, Java, and R.
 
 ##### ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-### <!> PySpark (Python API for Spark) - The PySpark is the Python API for using Apache Spark, which is a parallel and distributed engine used to perform big data analytics. In the era of big data, PySpark is extensively used by Python users for performing data analytics on massive datasets and building applications using distributed clusters.
+- ### PySpark (Python API for Spark) - The PySpark is the Python API for using Apache Spark, which is a parallel and distributed engine used to perform big data analytics. In the era of big data, PySpark is extensively used by Python users for performing data analytics on massive datasets and building applications using distributed clusters.
 
 ##### ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -30,14 +30,14 @@
 
 #### The SparkContext receives task information from the Cluster Manager and enqueues it on worker nodes. The executor is in charge of carrying out these duties. The lifespan of executors is the same as that of the Spark Application. We can increase the number of workers if we want to improve the performance of the system. In this way, we can divide jobs into more coherent parts.
 
-## ^ Two Main Abstractions of Apache Spark
+- ## Two Main Abstractions of Apache Spark
 #### Apache Spark has a well-defined layer architecture that is designed on two main abstractions:
 
 #### 1. Resilient Distributed Dataset (RDD): RDD is an immutable (read-only), fundamental collection of elements or items that can be operated on many devices at the same time (spark parallel processing). Each dataset in an RDD can be divided into logical portions, which are then executed on different nodes of a cluster.
 
 #### 2. Directed Acyclic Graph (DAG): DAG is the scheduling layer of the Apache Spark architecture that implements stage-oriented scheduling. Compared to MapReduce which creates a graph in two stages, Map and Reduce, Apache Spark can create DAGs that contain many stages.
 
-## ^ Cluster Manager Types
+- ## Cluster Manager Types
 #### The system currently supports several cluster managers:
 
 #### 1. Standalone — a simple cluster manager included with Spark that makes it easy to set up a cluster.
@@ -45,7 +45,7 @@
 #### 3. Hadoop YARN — the resource manager in Hadoop 2.
 #### 4. Kubernetes — an open-source system for automating deployment, scaling, and management of containerized applications.
 
-## ^ Execution Modes
+- ## Execution Modes
 
 #### 1. Cluster mode - Cluster mode is probably the most common way of running Spark Applications. In cluster mode, a user submits a pre-compiled JAR, Python script, or R script to a cluster manager. The cluster manager then launches the driver process on a worker node inside the cluster, in addition to the executor processes. This means that the cluster manager is responsible for maintaining all Spark Application–related processes.
 
