@@ -22,4 +22,6 @@ https://medium.com/@rganesh0203/most-important-spark-sql-concepts-as-a-data-engi
 
 - Apache Spark Optimizations: Enhancing Speed, Reducing Memory Usage, and Improving Scalability -> https://archive.ph/yrX3Y#selection-315.0-315.93
 
+- Complete Apache PySpark Learning Resources with Links — Data Engineering -> https://brilliantprogrammer.medium.com/complete-apache-pyspark-learning-resources-with-links-data-engineering-f1476f6860e6
+
 - 
