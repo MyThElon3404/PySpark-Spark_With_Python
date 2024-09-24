@@ -25,3 +25,11 @@ https://medium.com/@rganesh0203/most-important-spark-sql-concepts-as-a-data-engi
 - Complete Apache PySpark Learning Resources with Links — Data Engineering -> https://brilliantprogrammer.medium.com/complete-apache-pyspark-learning-resources-with-links-data-engineering-f1476f6860e6
 
 - 1.5 Years of Spark Knowledge in 8 Tips -> https://towardsdatascience.com/1-5-years-of-spark-knowledge-in-8-tips-f003c4743083
+
+- Data Engineer Skills 101: Everything You Need to Know For a Career in Data Engineering -> https://medium.com/@byanalytixlabs/data-engineer-skills-101-everything-you-need-to-know-for-a-career-in-data-engineering-2381094ad405
+
+- Data Engineering 101: A Beginner’s Guide to Getting Started -> https://medium.com/@msaad_86696/data-engineering-101-a-beginners-guide-to-getting-started-9735df177d9b
+
+- A Beginner’s Guide to Data Engineering — Part I -> https://archive.ph/fSIMG#selection-313.0-313.47
+
+- 
