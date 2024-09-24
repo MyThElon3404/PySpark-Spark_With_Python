@@ -32,4 +32,6 @@ https://medium.com/@rganesh0203/most-important-spark-sql-concepts-as-a-data-engi
 
 - A Beginner’s Guide to Data Engineering — Part I -> https://archive.ph/fSIMG#selection-313.0-313.47
 
+- Chapter 1: Basics of Data Engineering -> https://medium.com/@jojoyadav255/chapter-1-basics-of-data-engineering-67ebbb20cae9
+
 - 
